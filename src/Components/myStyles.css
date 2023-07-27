@@ -1,0 +1,125 @@
+.main-container{
+    background-color: rgb(7, 44, 77);
+    border-radius: 20px ;
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+}
+.sidebar-container{
+
+   display: flex;
+   flex-direction: column;
+    flex: 0.3;
+}
+
+.sd-header{
+    background-color: aliceblue;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.sd-search{
+    background-color: aliceblue;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.searchbox{
+    background-color: aliceblue;
+    outline-width: 0;
+    border: none;
+    font-size: 2rem;
+}
+.sd-conversations{
+    background-color: aliceblue;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+    flex-direction: column;
+}
+.conversation-container{
+    display: grid;
+    grid-template-columns: 32px auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+
+}
+.con-icon{
+    grid-area: 1/1/3/2;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: grey;
+    justify-self:center ;
+    align-self: center;
+    color: aliceblue;
+    
+}
+.con-title{
+    grid-area: 1/2/2/4;
+    font-weight:bold ;
+    color: black;
+}
+.con-timestamp{
+    justify-self: flex-end;
+    font-size: 0.75em;
+    color: black;
+}
+.con-lastMessage{
+    justify-self: flex-end;
+    font-size: 0.75em;
+    color: black;
+}
+.chatarea-container{
+    display: flex;
+    flex-direction: column;
+    flex:0.7;
+    border-radius: 20px;
+}
+.chatarea-header{
+    display: flex;
+    background-color: aliceblue;
+    border-radius :10px;
+    margin: 10px;
+}
+.message-container{
+    /* background-color: yellow; */
+    flex:1;
+}
+.text-input-area{
+    /* background-color: purple; */
+    display: flex;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.text-input{
+    flex: 1;
+    outline: 0;
+    border: none;
+}
+.header-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    
+}
