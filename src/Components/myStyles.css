@@ -4,12 +4,14 @@
     height: 90vh;
     width: 90vw;
     display: flex;
+    position: relative;
 }
 .sidebar-container{
 
    display: flex;
    flex-direction: column;
     flex: 0.3;
+    position: relative;
 }
 
 .sd-header{
@@ -32,7 +34,7 @@
     background-color: aliceblue;
     outline-width: 0;
     border: none;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .sd-conversations{
     background-color: aliceblue;
@@ -51,7 +53,9 @@
     column-gap: 10px;
     padding: 5px;
     margin: 5px;
+    height: max-content ;
     border-radius: 20px;
+    
 
 }
 .con-icon{
@@ -61,8 +65,8 @@
     align-content:center;
     font-size: 2rem;
     font-weight: bold;
-    height: 32px;
-    width: 32px;
+    height: 40px;
+    width: 40px;
     padding: 2px;
     border-radius: 50%;
     background-color: grey;
@@ -78,8 +82,14 @@
 }
 .con-timestamp{
     justify-self: flex-end;
+    align-self: flex-end;
     font-size: 0.75em;
     color: black;
+}
+.chatarea-timestamp{
+    justify-self: start;
+    font-weight: 50px;
+    font-size: small;
 }
 .con-lastMessage{
     justify-self: flex-end;
@@ -90,6 +100,7 @@
     display: flex;
     flex-direction: column;
     flex:0.7;
+    position: relative;
     border-radius: 20px;
 }
 .chatarea-header{
@@ -100,7 +111,13 @@
 }
 .message-container{
     /* background-color: yellow; */
+    overflow: scroll;
+    scrollbar-width: none;
     flex:1;
+}
+.message-container::-webkit-scrollbar
+{
+    display: none;
 }
 .text-input-area{
     /* background-color: purple; */
@@ -122,4 +139,117 @@
     flex: 1;
     padding: 10px;
     
+}
+.other-text-content{
+    background-color:aquamarine ;
+    padding: 10px 10px;
+    margin: 5px;
+    margin-top: 10px;
+    width:max-content;
+    display: flex;
+    justify-self: flex-start;
+    border-radius: 20px;
+    font-weight: 0.8em;
+    flex-direction: column;
+
+}
+.self-message-container{
+    
+    display: flex;
+    justify-content: flex-end;
+
+}
+.messageBox{
+    background-color:aquamarine ;
+    padding: 10px 10px;
+    margin: 10px;
+    margin-top: 10px;
+    width:max-content;
+    border-radius: 20px;
+    font-weight: 0.8em;
+    flex-direction: column;
+    display: flex;
+    justify-self: flex-end;
+
+}
+.welcome-container{
+    flex: 0.7;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.welcome-logo{
+    max-width: 300px;
+    max-height: 200px;
+}
+.createGroups-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 100px 100px;
+    margin: 50px 50px;
+    flex-direction:column ;
+    
+}
+.group-img{
+    height: 300px;
+    width: 300px;
+    flex-direction: column;
+}
+.group-input{
+
+    background-color: aliceblue;
+    height: 50px;
+    width: 500px;
+}
+.grp-seach{
+    background-color: aliceblue;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.login-container{
+    
+        background-color: rgb(7, 44, 77);
+        border-radius: 20px ;
+        height: 90vh;
+        width: 90vw;
+        display: flex;
+        position: relative;
+    
+}
+.img-container{
+    margin: 5px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+     flex: 0.3;
+    
+ }
+ .login-form{
+    background-color: aliceblue;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   flex: 0.7;
+    border-radius: 20px;
+}
+.login-box{
+    color: blueviolet;
+    gap: 10px;
+    display: flex;
+   flex-direction: column;
+   margin: 50px;
+   padding: 50px 50px;
+
+}
+.login-header{
+    font-size: 50px;
 }

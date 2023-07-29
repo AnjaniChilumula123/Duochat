@@ -7,7 +7,6 @@ function ConversationItems({props}) {
         <p className='con-title'>{props.name}</p>
         <p className='con-lastMesssage'>{props.lastMessage}</p>
         <p className='con-timestamp'>{props.timestamp}</p>
-        
     </div>
   )
 }
