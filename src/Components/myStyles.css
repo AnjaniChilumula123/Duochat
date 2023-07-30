@@ -1,15 +1,15 @@
 .main-container{
-    background-color: rgb(7, 44, 77);
+    background-color: rgb(235, 239, 243);
     border-radius: 20px ;
     height: 90vh;
     width: 90vw;
     display: flex;
-    position: relative;
+    position: fixed;
 }
 .sidebar-container{
 
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
     flex: 0.3;
     position: relative;
 }
@@ -40,6 +40,7 @@
     background-color: aliceblue;
     padding: 10px 5px;
     border-radius: 20px;
+     font-size: small;
     margin: 10px;
     display: flex;
     justify-content: space-between;
@@ -55,7 +56,7 @@
     margin: 5px;
     height: max-content ;
     border-radius: 20px;
-    
+    width: max-content;
 
 }
 .con-icon{
@@ -85,6 +86,7 @@
     align-self: flex-end;
     font-size: 0.75em;
     color: black;
+    
 }
 .chatarea-timestamp{
     justify-self: start;
@@ -214,12 +216,13 @@
 }
 .login-container{
     
-        background-color: rgb(7, 44, 77);
+        background-color:aliceblue(7, 44, 77);
         border-radius: 20px ;
         height: 90vh;
         width: 90vw;
         display: flex;
         position: relative;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
 }
 .img-container{
@@ -229,6 +232,7 @@
     display: flex;
     flex-direction: column;
      flex: 0.3;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
  }
  .login-form{

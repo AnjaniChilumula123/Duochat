@@ -34,9 +34,9 @@ function MainContainer() {
   return (
     <div className="main-container">
         <Sidebar/>
-        <CreateGroups/>
+        {/* <CreateGroups/> */}
     
-        {/* <<Welcome/>> */}
+         <Welcome/>
         {/* <Chatarea props={conversations[0]}/> */}
     </div>
   )
