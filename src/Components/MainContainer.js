@@ -3,12 +3,15 @@ import Sidebar from './Sidebar'
 import Chatarea from './Chatarea'
 import CreateGroups from './CreateGroups'
 import  { useState } from 'react';
-
-
+import Login from './Login'
 import "./myStyles.css"
 import Welcome from './Welcome';
+import AvailableUsers from './AvailableUsers';
+import { Outlet } from 'react-router-dom';
+import { useDispatch, useSelector}  from 'react-redux'
 
 function MainContainer() {
+  const lightTheme = useSelector((state) => state.themeKey);
   const [conversations,setConversations]=useState([
     {
      name:"Test1",
@@ -32,11 +35,12 @@ function MainContainer() {
     }
  ]);
   return (
-    <div className="main-container">
+    <div className={"main-container"  +(lightTheme? "" :" grey")}>
         <Sidebar/>
+        {/* <Welcome/> */}
         {/* <CreateGroups/> */}
-    
-         <Welcome/>
+          <Outlet/>
+         {/* <Login/> */}
         {/* <Chatarea props={conversations[0]}/> */}
     </div>
   )

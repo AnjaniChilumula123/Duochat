@@ -1,10 +1,12 @@
 import React from 'react'
 import "./myStyles.css"
+import Lottie from 'lottie-react'
+import Welcomelogo from '../Welcomelogo.json'
 
 function Welcome() {
   return (
     <div className='welcome-container'>
-      <img className='welcome-logo' src="./meeting.png" alt='meeting.png'></img>
+       <Lottie  className='welcome-logo' loop={true} animationData={Welcomelogo}/>
       <p>Come on Start the conversation with your friends and family</p>
     </div>
   )
